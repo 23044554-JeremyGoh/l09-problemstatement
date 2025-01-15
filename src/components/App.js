@@ -7,7 +7,7 @@ import Session from "./Session";
 import Register from "./Register";
 import Confirmation from "./Confirmation";
 import Header from "./Header";
-
+import FAQ from "./FAQ";
 function App() {
   return (
     <div className="app">
@@ -20,9 +20,10 @@ function App() {
             <Route path=":sessionId" element={<Session />} />
           </Route>
           <Route index element={<h3>Select a diploma from above</h3>} />
-        </Route>
+        </Route>  
         <Route path="register" element={<Register />} />
         <Route path="confirmed" element={<Confirmation />} />
+        <Route path="faq" element={<FAQ />} />
         <Route
           path="*"
           element={<h1 className="not-found">Page Not Found</h1>}
@@ -30,7 +31,7 @@ function App() {
       </Routes>
 
       <footer className="container">
-        &copy;2022 |{" "}
+        &copy;2024 |{" "}
         <a href="https://www.rp.edu.sg/schools-courses">Republic Polytechnic</a>
       </footer>
     </div>

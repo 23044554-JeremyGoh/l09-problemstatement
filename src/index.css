@@ -6,7 +6,7 @@
 body {
   margin: 0;
   color: #222;
-  font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -56,6 +56,7 @@ ul li {
 
 /* nav & links */
 
+
 a {
   color: #e7212b;
 }
@@ -67,7 +68,7 @@ a:hover {
 nav a {
   display: block;
   font-size: 1.25rem;
-  color: #DD1F26;
+  color: black;
   padding-bottom: 0.15em;
   border-bottom: 2px solid transparent;
   font-weight: 500;
@@ -207,6 +208,67 @@ footer.container {
   max-width: 800px;
   margin: 0 auto;
 }
+
+.faq-container {
+  padding: 30px;
+  max-width: 700px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item h3 {
+  font-size: 18px;
+  color: #007bff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item h3:hover {
+  color: red;
+}
+
+.faq-answer {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+  margin: 10px 0 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.faq-item.open h3 {
+  font-weight: bold;
+  color: 007bff;
+}
+
+.faq-item.open {
+  background-color: #f1f9ff;
+}
+
 
 /* media queries */
 @media (max-width: 767px) {
